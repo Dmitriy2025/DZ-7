@@ -25,6 +25,13 @@ if (first > last)
     last = temp;
 }
 
-Console.WriteLine($"Натуральные числа от M до N: {InterateAndPrint( first, last)}");
-Console.WriteLine();
-
+if (first < 0 || last < 0)
+{
+    Console.WriteLine("Числа M и N должны быть натуральными! Запустите программу заново");
+    Console.WriteLine();
+}
+else 
+{
+    Console.WriteLine($"Натуральные числа от M до N: {InterateAndPrint( first, last)}");
+    Console.WriteLine();
+}
